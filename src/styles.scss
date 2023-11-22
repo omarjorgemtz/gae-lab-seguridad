@@ -1,0 +1,86 @@
+@import './theme.scss';
+@import '~@angular/material/theming';
+@include mat-core();
+
+html,
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+$color-contrast: (
+    50: $color-primary-humo,
+    100: $color-primary-humo,
+    200: $color-primary-humo,
+    300: $color-primary-humo,
+    400: $color-primary-humo,
+    500: $color-primary-humo,
+    600: $color-primary-humo,
+    700: $color-primary-humo,
+    800: $color-primary-humo,
+    900: $color-primary-humo,
+    A100: $color-primary-humo,
+    A200: $color-primary-humo,
+    A400: $color-primary-humo,
+    A700: $color-primary-humo
+);
+
+$gnp-orange: (
+    50: $color-inks-naranja-gnp-100,
+    100: $color-inks-naranja-gnp-100,
+    200: $color-inks-naranja-gnp-200,
+    300: $color-inks-naranja-gnp-300,
+    400: $color-inks-naranja-gnp-400,
+    500: $color-inks-naranja-gnp,
+    600: $color-inks-naranja-gnp-500,
+    700: $color-inks-naranja-gnp-600,
+    800: $color-inks-naranja-gnp-700,
+    900: $color-inks-naranja-gnp-800,
+    A100: $color-inks-naranja-gnp,
+    A200: $color-inks-naranja-gnp,
+    A400: $color-inks-naranja-gnp,
+    A700: $color-inks-naranja-gnp,
+    contrast: $color-contrast
+);
+
+$gnp-blue: (
+    50: $color-inks-azul-gnp-50,
+    100: $color-inks-azul-gnp-100,
+    200: $color-inks-azul-gnp-200,
+    300: $color-inks-azul-gnp-300,
+    400: $color-inks-azul-gnp-400,
+    500: $color-inks-azul-gnp,
+    600: $color-inks-azul-gnp-500,
+    700: $color-inks-azul-gnp-600,
+    800: $color-inks-azul-gnp-800,
+    900: $color-inks-azul-gnp-900,
+    A100: $color-inks-azul-gnp,
+    A200: $color-inks-azul-gnp,
+    A400: $color-inks-azul-gnp,
+    A700: $color-inks-azul-gnp,
+    contrast: $color-contrast
+);
+
+$gnp-primary: mat-palette($gnp-orange);
+$gnp-accent: mat-palette($gnp-blue, A200, A100, A400);
+$gnp-warn: mat-palette($mat-red);
+$gnp-theme: mat-light-theme(
+    (
+        color: (
+            primary: $gnp-primary,
+            accent: $gnp-accent,
+            warn: $gnp-warn
+        )
+    )
+);
+
+@include angular-material-theme($gnp-theme);
+
+@font-face {
+    font-family: Open Sans;
+    src: url(./assets/fonts/OpenSans-SemiBold.ttf) format('truetype');
+    font-weight: 300;
+}

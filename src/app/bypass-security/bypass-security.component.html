@@ -1,0 +1,13 @@
+<h3>Bypass Security Component</h3>
+
+<h4>An untrusted URL:</h4>
+<p><a class="" [href]="dangerousUrl">Click me</a></p>
+<h4>A trusted URL:</h4>
+<p><a class="" [href]="trustedUrl">Click me</a></p>
+
+<h4>Resource URL:</h4>
+<p>Showing: {{dangerousVideoUrl}}</p>
+<p>Trusted:</p>
+<iframe class="" width="640" height="390" [src]="videoUrl" title="trusted video url"></iframe>
+<p>Untrusted:</p>
+<iframe class="" width="640" height="390" [src]="dangerousVideoUrl" title="unTrusted video url"></iframe>
