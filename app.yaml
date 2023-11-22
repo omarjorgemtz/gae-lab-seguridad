@@ -1,0 +1,9 @@
+runtime: python37
+service: default
+handlers:
+    - url: /(.*\.(gif|png|jpg|css|js|woff2|ttf|woff|svg)(|\.map))$
+      static_files: dist/angular-template/\1
+      upload: dist/angular-template/(.*)(|\.map)
+    - url: /(.*)
+      static_files: dist/angular-template/index.html
+      upload: dist/angular-template/index.html
