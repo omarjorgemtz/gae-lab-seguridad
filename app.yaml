@@ -2,8 +2,8 @@ runtime: python37
 service: default
 handlers:
     - url: /(.*\.(gif|png|jpg|css|js|woff2|ttf|woff|svg)(|\.map))$
-      static_files: dist/angular-template/\1
-      upload: dist/angular-template/(.*)(|\.map)
+      static_files: dist/gae-lab-seguridad/\1
+      upload: dist/gae-lab-seguridad/(.*)(|\.map)
     - url: /(.*)
-      static_files: dist/angular-template/index.html
-      upload: dist/angular-template/index.html
+      static_files: dist/gae-lab-seguridad/index.html
+      upload: dist/gae-lab-seguridad/index.html

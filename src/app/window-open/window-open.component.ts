@@ -13,7 +13,7 @@ export class WindowOpenComponent implements OnInit {
         this.setCookie('myFirstCookie', 'CookiePeligrosa', 1);
     }
 
-    abrirGnpSeguros(id) {
+    abrirURL(id) {
         let dangerousVideoUrl = 'https://www.youtube.com/embed/' + id;
         window.open(dangerousVideoUrl);
     }
