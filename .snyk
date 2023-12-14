@@ -1,0 +1,24 @@
+custom_rules:
+  - id: XSS Angular
+    description: ByPassSecurity deshabilita la validación interna de Angular
+    severity: high
+    cwe: []
+    fix_analysis: No existe un fix
+    rule_code: bypassSecurityTrustUrl
+    languages:
+      - apex
+      - c
+      - cpp
+      - csharp
+      - go
+      - html
+      - java
+      - javascript
+      - kotlin
+      - php
+      - python
+      - ruby
+      - scala
+      - swift
+      - typescript
+      - vb

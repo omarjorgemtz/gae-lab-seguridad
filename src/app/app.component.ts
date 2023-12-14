@@ -23,3 +23,4 @@ export class AppComponent implements OnInit {
         console.log('%c%s', this.styles, tag);
     }
 }
+

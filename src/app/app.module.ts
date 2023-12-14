@@ -32,3 +32,4 @@ import { AddIconExampleComponent } from './add-icon-example/add-icon-example.com
     bootstrap: [AppComponent]
 })
 export class AppModule {}
+

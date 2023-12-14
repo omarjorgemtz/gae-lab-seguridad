@@ -22,3 +22,4 @@ describe('WindowOpenComponent', () => {
         expect(component).toBeTruthy();
     });
 });
+
