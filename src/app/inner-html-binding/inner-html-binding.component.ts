@@ -17,3 +17,4 @@ export class InnerHtmlBindingComponent implements OnInit {
         ).innerHTML = this.htmlSnippet;
     }
 }
+
